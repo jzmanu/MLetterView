@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LetterView">
+        <attr name="letterTextColor" format="color" />
+        <attr name="letterTextSize" format="dimension" />
+        <attr name="letterTextBackgroundColor" format="color" />
+        <attr name="letterEnableIndicator" format="boolean" />
+        <attr name="letterIndicatorColor" format="color" />
+    </declare-styleable>
+</resources>

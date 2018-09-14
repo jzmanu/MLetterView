@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manu.mletterview.MainActivity">
+
+    <ListView
+        android:id="@+id/lvData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"/>
+
+    <com.manu.letter.widget.LetterView
+        android:id="@+id/letterView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:letterIndicatorColor="#999999"
+        app:letterTextBackgroundColor="#ffffff"
+        app:letterTextColor="#333333"
+        app:letterTextSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvLetterHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/drawable_letter_bg"
+        android:gravity="center"
+        android:textSize="20sp"
+        tools:text="A"
+        android:visibility="gone"/>
+
+</RelativeLayout>
